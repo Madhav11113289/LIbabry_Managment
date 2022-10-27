@@ -16,7 +16,7 @@ public class DBConnection {
     public static Connection getConnection() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-                 con = DriverManager.getConnection("jdbc:mysql://localhost:3306/library_ms","root","madhav112");
+                 con = DriverManager.getConnection("jdbc:mysql://localhost:3306/library_ms","user default[root]","Password");
         } catch (Exception e) {
             e.printStackTrace();
         }
